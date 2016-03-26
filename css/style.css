@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+body
+{
+    background: lightgreen;
+    font-family: "Arial", sans-serif;
+
+    width: 600px;
+    margin: 0 auto;
+}
+
+div.container
+{
+    width: 560px;
+    background-color: white;
+
+    margin-top: -3px;
+    padding: 10px 0 20px 40px;
+}
+
+/****** H1s, H2s, H3s ******/
+h1, h2
+{
+    padding-bottom: 20px;
+}
+
+h1#welcome
+{
+    padding-top: 35px;
+}
+
+h3#clueNum
+{
+    margin-bottom: -20px;
+}
+
+
+/****************** Navigation ******************/
+div.container nav ul
+{
+    list-style: none;
+    margin-left: 350px;
+}
+
+div.container nav ul li
+{
+    display: inline-block;
+    padding: 0 7px;
+}
+
+div.container nav ul li a:link
+{
+    color: black;
+}
+
+div.container nav ul li a:visited
+{
+    color: gray;
+}
+
+div.container nav ul li a:hover,
+div.container nav ul li a:active
+{
+    color: green;
+}
+
+
+/******************** Puzzles ********************/
+table.normal
+{
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+table.normal tr td
+{
+    border: 1px solid black;
+    text-align: center;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    width: 45px;
+    height: 45px;
+}
+
+/*** Correct and Incorrect Cells ***/
+table.normal tr td.correct
+ {
+     font-weight: normal;
+     color: green;
+ }
+
+table.normal tr td.incorrect
+{
+    font-weight: normal;
+    color: red;
+}
+
+table.normal tr td.incorrect a:link,
+table.normal tr td.incorrect a:visited,
+table.normal tr td.incorrect a:hover,
+table.normal tr td.incorrect a:active
+{
+    text-decoration: none;
+    color: red;
+
+    padding-top: 9px;
+}
+
+/****** 3x3 Lines ******/
+table.normal tr:nth-child(3),
+table.normal tr:nth-child(6)
+{
+    border-bottom: 2px solid black;
+}
+
+table.normal tr td:nth-child(3),
+table.normal tr td:nth-child(6)
+{
+    border-right: 2px solid black;
+}
+
+
+/****************** Notes Table ******************/
+table.noteTable
+{
+    border: none;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+
+    width: 45px;
+    height: 45px;
+}
+
+table.noteTable tr td
+{
+    border: none;
+    text-align: center;
+
+    font-size: 11px;
+    font-weight: normal;
+    color: green;
+
+    margin: 0;
+    padding: 0;
+
+    width: 0;
+    height: 0;
+}
+
+table.noteTable tr td a:link,
+table.noteTable tr td a:visited,
+table.noteTable tr td a:hover,
+table.noteTable tr td a:active
+{
+    text-decoration: none;
+    color: green;
+}
+
+/****** No 3x3 Lines ******/
+table.noteTable tr td:nth-child(3),
+table.noteTable tr td:nth-child(6)
+{
+    border-right: none;
+    border-bottom: none;
+}
+
+
+/****************** Cell Links ******************/
+table.normal tr td a
+{
+    display: block;
+    font-weight: normal;
+
+    width: 100%;
+    height: 100%;
+}
+
+table.normal tr td a:hover
+{
+    background-color: #C2FFBA;
+
+    /*border: 3px solid black;
+    width: 100%;
+    height: 114%;
+    margin-left: -3px;*/
+}
+
+
+/******************* Checkboxes *******************/
+div.content form p input#checkbox2,
+div.content form p input#checkbox3,
+div.content form p input#checkbox5,
+div.content form p input#checkbox6,
+div.content form p input#checkbox8,
+div.content form p input#checkbox9
+{
+    margin-left: 75px;
+}
+
+
+/******************** Content ********************/
+div.content
+{
+    padding-left: 40px;
+    padding-bottom: 60px;
+}
+
+div.content form p input#play
+{
+    padding: 5px 10px;
+
+    margin-left: 234px;
+    margin-bottom: 20px;
+}
+
